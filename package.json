@@ -1,0 +1,39 @@
+{
+  "name": "sourcevault",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "runtime": "tsx src/runtime/index.ts",
+    "vault:init": "tsx src/runtime/storage/init.ts",
+    "sync": "tsx src/runtime/sync/manual.ts",
+    "demo:e2e": "tsx scripts/demo-e2e.ts",
+    "test:targets": "tsx scripts/test-targets.ts",
+    "test:failures": "tsx scripts/test-failures.ts",
+    "test:e2e": "tsx scripts/test-e2e.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^15.1.0",
+    "better-sqlite3": "^11.0.0",
+    "node-cron": "^3.0.3",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node-cron": "^3.0.11",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5",
+    "eslint": "^8",
+    "eslint-config-next": "^15.1.0",
+    "tsx": "^4.7.0"
+  }
+}

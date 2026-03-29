@@ -1,0 +1,132 @@
+.header {
+  margin-bottom: var(--spacing-8);
+}
+
+.header h1 {
+  margin-bottom: var(--spacing-2);
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.section {
+  width: 100%;
+}
+
+.titleLink {
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.titleLink:hover {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+.date {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.sourceLink {
+  font-size: 0.875rem;
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.sourceLink:hover {
+  text-decoration: underline;
+}
+
+.topicList {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+}
+
+.topicRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topicLink {
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.topicLink:hover {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+.count {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.digest {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.digestSummary {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  padding-bottom: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.digestContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.digestItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.digestHeading {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.digestText {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.digestLink {
+  font-size: 0.875rem;
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.digestLink:hover {
+  text-decoration: underline;
+}
+
+.sourceType {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.topicActivity {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}

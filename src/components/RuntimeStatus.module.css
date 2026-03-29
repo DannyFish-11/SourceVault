@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.row:last-of-type {
+  border-bottom: none;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.value {
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.valuePath {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-secondary);
+  word-break: break-all;
+}
+
+.statusRunning {
+  color: var(--color-trust-high);
+  font-weight: 500;
+}
+
+.statusStopped {
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.statusConnected {
+  color: var(--color-trust-high);
+  font-weight: 500;
+}
+
+.statusDisconnected {
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.failed {
+  color: var(--color-trust-low);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-3);
+  align-items: center;
+  padding-top: var(--spacing-3);
+  margin-top: var(--spacing-2);
+  border-top: 1px solid var(--color-border);
+}
+
+.settingsLink {
+  font-size: 0.875rem;
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.settingsLink:hover {
+  text-decoration: underline;
+}
+
+.error {
+  font-size: 0.875rem;
+  color: var(--color-trust-low);
+  padding: var(--spacing-3);
+}
+
+.loading {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  padding: var(--spacing-3);
+}

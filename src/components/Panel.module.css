@@ -1,0 +1,17 @@
+.panel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  background-color: var(--color-background);
+}
+
+.title {
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.content {
+  padding: var(--spacing-4);
+}

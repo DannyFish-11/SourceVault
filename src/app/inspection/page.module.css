@@ -1,0 +1,293 @@
+.header {
+  margin-bottom: var(--spacing-8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.section {
+  width: 100%;
+}
+
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.statusItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.statusLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statusValue {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.statusValue[data-status="good"] {
+  color: var(--color-trust-high);
+}
+
+.statusValue[data-status="bad"] {
+  color: var(--color-trust-low);
+}
+
+.statusValue[data-status="warning"] {
+  color: var(--color-trust-medium);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  padding: var(--spacing-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.statValue[data-status="good"] {
+  color: var(--color-trust-high);
+}
+
+.statValue[data-status="bad"] {
+  color: var(--color-trust-low);
+}
+
+.statValue[data-status="warning"] {
+  color: var(--color-trust-medium);
+}
+
+.targetHealth {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.healthSummary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.healthItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.healthLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.healthValue {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.healthValue[data-status="good"] {
+  color: var(--color-trust-high);
+}
+
+.healthValue[data-status="bad"] {
+  color: var(--color-trust-low);
+}
+
+.targetList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.targetItem {
+  padding: var(--spacing-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.targetInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.targetName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.targetMode {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
+.targetStatus {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+}
+
+.targetBadge {
+  font-size: 0.75rem;
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-secondary);
+}
+
+.targetBadge[data-enabled="true"],
+.targetBadge[data-configured="true"],
+.targetBadge[data-available="true"] {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: var(--color-trust-high);
+}
+
+.targetBadge[data-enabled="false"],
+.targetBadge[data-configured="false"],
+.targetBadge[data-available="false"] {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--color-trust-low);
+}
+
+.targetError {
+  font-size: 0.75rem;
+  color: var(--color-trust-low);
+  padding: var(--spacing-2);
+  background-color: rgba(239, 68, 68, 0.05);
+  border-radius: var(--radius-sm);
+}
+
+.targetActions {
+  margin-top: var(--spacing-2);
+}
+
+.jobList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.jobItem {
+  padding: var(--spacing-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.jobHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobTarget {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.jobStatus {
+  font-size: 0.75rem;
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-secondary);
+}
+
+.jobStatus[data-status="synced"] {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: var(--color-trust-high);
+}
+
+.jobStatus[data-status="failed"] {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--color-trust-low);
+}
+
+.jobStatus[data-status="deferred"],
+.jobStatus[data-status="blocked"] {
+  background-color: rgba(234, 179, 8, 0.1);
+  color: var(--color-trust-medium);
+}
+
+.jobDetails {
+  display: flex;
+  gap: var(--spacing-3);
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
+.jobId,
+.jobAttempts {
+  font-family: monospace;
+}
+
+.jobError {
+  font-size: 0.75rem;
+  color: var(--color-trust-low);
+  padding: var(--spacing-2);
+  background-color: rgba(239, 68, 68, 0.05);
+  border-radius: var(--radius-sm);
+}
+
+.jobActions {
+  display: flex;
+  gap: var(--spacing-2);
+  margin-top: var(--spacing-1);
+}
+
+.emptyState {
+  font-size: 0.875rem;
+  color: var(--color-text-tertiary);
+  text-align: center;
+  padding: var(--spacing-6);
+}

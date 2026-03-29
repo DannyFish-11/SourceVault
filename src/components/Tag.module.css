@@ -1,0 +1,25 @@
+.tag {
+  display: inline-block;
+  padding: var(--spacing-1) var(--spacing-2);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-gray-100);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.high {
+  background-color: #dcfce7;
+  color: var(--color-trust-high);
+}
+
+.medium {
+  background-color: #fef3c7;
+  color: var(--color-trust-medium);
+}
+
+.low {
+  background-color: #fee2e2;
+  color: var(--color-trust-low);
+}

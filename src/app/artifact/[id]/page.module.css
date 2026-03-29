@@ -1,0 +1,137 @@
+.header {
+  margin-bottom: var(--spacing-8);
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-4);
+  gap: var(--spacing-6);
+}
+
+.titleRow h1 {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-shrink: 0;
+}
+
+.sourceButton {
+  text-decoration: none;
+}
+
+.meta {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--spacing-6);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mainColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.summary {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+.infoGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+}
+
+.value {
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.link {
+  font-size: 0.875rem;
+  color: var(--color-link);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.timeline {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.timelineLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+}
+
+.timelineDate {
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.topics {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+}
+
+.topicLink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.topicLink:hover {
+  color: var(--color-link);
+  text-decoration: underline;
+}
